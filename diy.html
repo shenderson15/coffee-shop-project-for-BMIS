@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore - DIY Page</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Additional CSS for DIY Page */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('assets/img/coffee-beans-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .content-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-family: 'Georgia', serif;
+            color: #d4af37; /* Gold-like color for headers */
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        ul, ol {
+            color: #eaeaea;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .embed-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        iframe, .tableauPlaceholder {
+            max-width: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .navigation a {
+            margin: 0 15px;
+            font-weight: bold;
+            color: #d4af37;
+            text-transform: uppercase;
+        }
+
+        .navigation a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <header>
+            <h1>Explore The Study Spot</h1>
+            <p>Delve into our coffee community, resources, and creative vibes.</p>
+        </header>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+        </div>
+        <main>
+            <section>
+                <h2>Features of Our Cafe</h2>
+                <ol>
+                    <li>
+                        Coffee Varieties
+                        <ul>
+                            <li>Single-Origin Coffees</li>
+                            <li>Signature Espresso Blends</li>
+                            <li>Cold Brew Infusions</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Study Spaces
+                        <ul>
+                            <li>Group Collaboration Zones</li>
+                            <li>Private Study Nooks</li>
+                            <li>Outdoor Seating with Wi-Fi</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <div class="embed-container">
+                <h2>Tableau Coffee Dashboard</h2>
+                <div class='tableauPlaceholder' id='viz1733854998363' style='position: relative; width: 800px; height: 600px; margin: 0 auto;'>
+                    <noscript>
+                        <a href='#'><img alt='Coffee' src='https://public.tableau.com/static/images/Th/TheCoffeeDashboard/Coffee/1_rss.png' style='border: none' /></a>
+                    </noscript>
+                    <object class='tableauViz' style='display: none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='TheCoffeeDashboard/Coffee' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https://public.tableau.com/static/images/Th/TheCoffeeDashboard/Coffee/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1733854998363');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '800px';
+                    vizElement.style.height = '600px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+            </div>
+
+            <div class="embed-container">
+                <h2>Learn About Coffee Brewing</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xQ156y4TtJs?si=eucNg_jDA26ufD2J" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; The Study Spot 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
